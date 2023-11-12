@@ -1,0 +1,9 @@
+longhorn:
+  enabled: true
+  defaultSettings:
+    defaultDataPath: "/longhorn"
+    defaultReplicaCount: "1"
+
+  persistence:
+    defaultClassReplicaCount: 1
+    defaultClass: false
