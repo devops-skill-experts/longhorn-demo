@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: longhorn-nodeport
 spec:
-  ports:
-  - port: 5000
-    protocol: TCP
-    targetPort: 5000
-    nodePort: 31000
-  selector:
-    app: xxxx
   type: NodePort
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: http
+  selector:
+    app: longhorn-ui
