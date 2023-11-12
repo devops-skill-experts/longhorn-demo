@@ -9,5 +9,6 @@ spec:
     port: 80
     protocol: TCP
     targetPort: http
+    nodePort: 31000
   selector:
     app: longhorn-ui
